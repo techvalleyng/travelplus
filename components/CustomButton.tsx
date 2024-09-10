@@ -1,11 +1,4 @@
-import {
-  Text,
-  type TextProps,
-  StyleSheet,
-  TouchableOpacity,
-} from "react-native";
-
-import { useThemeColor } from "@/hooks/useThemeColor";
+import { Text, type TextProps, TouchableOpacity } from "react-native";
 
 export type CustomButtonProps = TextProps & {
   type?: "default" | "title" | "defaultSemiBold" | "subtitle" | "link";
@@ -25,7 +18,7 @@ export function CustomButton({
     <TouchableOpacity
       onPress={onPress}
       className={
-        "bg-primary text-white rounded-[16px] font-medium p-4 items-center " +
+        "bg-primary text-white rounded-full font-medium p-4 items-center " +
         className
       }
       {...rest}

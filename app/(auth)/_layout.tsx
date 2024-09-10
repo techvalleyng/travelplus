@@ -5,6 +5,7 @@ export default function RootLayout() {
     <Stack>
       <Stack.Screen name="SignIn" options={{ headerShown: false }} />
       <Stack.Screen name="SignUp" options={{ headerShown: false }} />
+      <Stack.Screen name="OTP" options={{ headerShown: false }} />
       <Stack.Screen name="Welcome" options={{ headerShown: false }} />
     </Stack>
   );

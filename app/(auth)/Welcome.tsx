@@ -17,7 +17,7 @@ const Welcome = () => {
         <View className="flex-1 mx-8 justify-center relative">
           <CustomButton
             title="Log In"
-            onPress={() => router.replace({ pathname: "/SignIn" })}
+            onPress={() => router.navigate({ pathname: "/SignIn" })}
           />
           <View className="text-center absolute bottom-0 left-[20%] flex-row">
             <Text className="text-[#4A4A4A9E] pb-3 text-[16px]">
