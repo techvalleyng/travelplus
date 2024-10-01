@@ -3,6 +3,9 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "landing-bg": "url('./assets/images/background.jpeg')",
+      },
       colors: {
         primary: "#158B51",
 

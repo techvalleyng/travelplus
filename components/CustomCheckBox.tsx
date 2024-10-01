@@ -1,10 +1,4 @@
-import {
-  Text,
-  type TextProps,
-  TouchableOpacity,
-  Image,
-  View,
-} from "react-native";
+import { Text, type TextProps, TouchableOpacity, View } from "react-native";
 
 export type CustomCheckBoxProps = TextProps & {
   className?: string;

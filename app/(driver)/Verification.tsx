@@ -1,6 +1,6 @@
 import { CustomButton } from "@/components/CustomButton";
 import { Link, Redirect, router } from "expo-router";
-import { Button, Text, TouchableOpacity, View } from "react-native";
+import { Button, Pressable, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CheckBox from "react-native-check-box";
 import { CustomCheckBox } from "@/components/CustomCheckBox";
@@ -18,18 +18,21 @@ const Verification = () => {
           to set up your account.
         </Text>
         <View className="flex flex-col gap-4">
-          <View className="flex-row justify-between bg-[#18C1480F] h-[116px] items-center pl-4 pr-14">
+          <Pressable
+            onPress={() => router.navigate("/(driver)/PersonalInformation")}
+            className="flex-row justify-between bg-[#18C1480F] h-[116px] items-center pl-4 pr-14"
+          >
             <Text className="text-[24px] font-[600]">Personal Information</Text>
             <CustomCheckBox checked={true} />
-          </View>
-          <View className="flex-row justify-between bg-[#E4E9EE] h-[116px] items-center pl-4 pr-14">
+          </Pressable>
+          <Pressable className="flex-row justify-between bg-[#E4E9EE] h-[116px] items-center pl-4 pr-14">
             <Text className="text-[24px] font-[600]">Vehicle Information</Text>
             <CustomCheckBox checked={false} />
-          </View>
-          <View className="flex-row justify-between bg-[#EEF1F4] h-[116px] items-center pl-4 pr-14">
+          </Pressable>
+          <Pressable className="flex-row justify-between bg-[#EEF1F4] h-[116px] items-center pl-4 pr-14">
             <Text className="text-[24px] font-[600]">Document Upload</Text>
             <CustomCheckBox checked={false} />
-          </View>
+          </Pressable>
         </View>
         <View className="mt-20">
           <CustomButton title="continue" />

@@ -4,6 +4,7 @@ import { Button, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useEffect, useState } from "react";
 import { Alert, Modal, StyleSheet, Pressable } from "react-native";
+import CustomMap from "@/components/CustomMap";
 
 const Home = () => {
   const [modalVisible, setModalVisible] = useState(true);
@@ -16,7 +17,7 @@ const Home = () => {
     <SafeAreaView>
       <View className=" h-full w-full flex flex-col">
         <View className="flex-1 mx-8">
-          <Text>Big ass map should be hedsdre</Text>
+          <CustomMap />
         </View>
       </View>
       <Modal

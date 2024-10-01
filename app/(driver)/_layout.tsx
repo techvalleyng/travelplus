@@ -5,6 +5,10 @@ export default function DriverLayout() {
     <Stack>
       <Stack.Screen name="Home" options={{ headerShown: false }} />
       <Stack.Screen name="Verification" options={{ headerShown: false }} />
+      <Stack.Screen
+        name="PersonalInformation"
+        options={{ headerShown: false }}
+      />
     </Stack>
   );
 }
