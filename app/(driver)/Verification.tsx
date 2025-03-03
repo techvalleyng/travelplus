@@ -25,7 +25,10 @@ const Verification = () => {
             <Text className="text-[24px] font-[600]">Personal Information</Text>
             <CustomCheckBox checked={true} />
           </Pressable>
-          <Pressable className="flex-row justify-between bg-[#E4E9EE] h-[116px] items-center pl-4 pr-14">
+          <Pressable
+            onPress={() => router.navigate("/(driver)/VehicleInformation")}
+            className="flex-row justify-between bg-[#E4E9EE] h-[116px] items-center pl-4 pr-14"
+          >
             <Text className="text-[24px] font-[600]">Vehicle Information</Text>
             <CustomCheckBox checked={false} />
           </Pressable>

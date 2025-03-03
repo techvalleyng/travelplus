@@ -1,13 +1,10 @@
 import { CustomButton } from "@/components/CustomButton";
-import { Link, Redirect, router } from "expo-router";
-import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import CheckBox from "react-native-check-box";
-import { CustomCheckBox } from "@/components/CustomCheckBox";
 import CustomInput from "@/components/CustomInput";
 import { useState } from "react";
-import RNPickerSelect from "react-native-picker-select";
 import CustomSelect from "@/components/CustomSelect";
+import { router } from "expo-router";
 
 const PersonalInformation = () => {
   const [form, setFrom] = useState({
@@ -58,7 +55,10 @@ const PersonalInformation = () => {
           </View>
         </View>
         <View className="mt-20">
-          <CustomButton title="Save" />
+          <CustomButton
+            title="Save"
+            onPress={() => router.navigate("/(driver)/Verification")}
+          />
         </View>
       </View>
     </SafeAreaView>

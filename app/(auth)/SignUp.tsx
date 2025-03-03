@@ -1,21 +1,17 @@
 import { CustomButton } from "@/components/CustomButton";
 import CustomInput from "@/components/CustomInput";
-import { Link, Redirect, router } from "expo-router";
+import { Link, router } from "expo-router";
 import { useState } from "react";
 import {
-  Button,
   Image,
   Keyboard,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
   Text,
-  TextInput,
-  TouchableOpacity,
   TouchableWithoutFeedback,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const SignUp = () => {
   const [form, setFrom] = useState({

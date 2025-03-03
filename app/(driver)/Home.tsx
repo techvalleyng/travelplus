@@ -1,9 +1,9 @@
 import { CustomButton } from "@/components/CustomButton";
-import { Link, Redirect, router } from "expo-router";
-import { Button, Text, TouchableOpacity, View } from "react-native";
+import { router } from "expo-router";
+import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import React, { useEffect, useState } from "react";
-import { Alert, Modal, StyleSheet, Pressable } from "react-native";
+import React, { useState } from "react";
+import { Modal, StyleSheet } from "react-native";
 import CustomMap from "@/components/CustomMap";
 
 const Home = () => {

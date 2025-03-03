@@ -9,6 +9,10 @@ export default function DriverLayout() {
         name="PersonalInformation"
         options={{ headerShown: false }}
       />
+      <Stack.Screen
+        name="VehicleInformation"
+        options={{ headerShown: false }}
+      />
     </Stack>
   );
 }
